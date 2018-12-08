@@ -28,8 +28,6 @@ SLOT="0"
 IUSE=""
 KEYWORDS="~amd64"
 
-RESTRICT="test"
-
 src_prepare() {
 	default
 
