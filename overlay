@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>fische</name>
+		<description lang="en">Gentoo overlay from fische</description>
+		<homepage>https://github.com/fische/gentoo-overlay</homepage>
+		<owner type="person">
+			<email>maxime2fischer@gmail.com</email>
+			<name>Maxime Fischer</name>
+		</owner>
+		<source type="git">https://github.com/fische/gentoo-overlay.git</source>
+		<feed>https://github.com/fische/gentoo-overlay/commits/master.atom</feed>
+	</repo>
+</repositories>
