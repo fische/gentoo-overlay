@@ -1,0 +1,8 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/coredns"
+
+pidfile="/var/run/${RC_SVCNAME}.pid"
+command_args="-pidfile ${pidfile} -conf ${CONFIG_PATH}"
+command_background=true
+

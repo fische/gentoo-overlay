@@ -40,6 +40,12 @@ src_compile() {
 }
 
 src_install() {
+	insinto /etc/coredns
+	newins "${FILESDIR}"/Corefile-1.2.6 Corefile
+
+	newinitd "${FILESDIR}"/coredns.init-1.2.6 coredns
+	newconfd "${FILESDIR}"/coredns.conf-1.2.6 coredns
+
 	dobin ${PN}
 	dodoc src/${EGO_PN}/README.md
 	save_config src/${EGO_PN}/plugin.cfg
