@@ -43,8 +43,8 @@ src_install() {
 	insinto /etc/coredns
 	newins "${FILESDIR}"/Corefile-1.2.6 Corefile
 
-	newinitd "${FILESDIR}"/coredns.init-1.2.6 coredns
-	newconfd "${FILESDIR}"/coredns.conf-1.2.6 coredns
+	newinitd "${FILESDIR}"/coredns-1.2.6.init coredns
+	newconfd "${FILESDIR}"/coredns-1.2.6.conf coredns
 
 	dobin ${PN}
 	dodoc src/${EGO_PN}/README.md

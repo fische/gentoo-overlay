@@ -1,8 +1,15 @@
 #!/sbin/openrc-run
 
+depend() {
+	need net
+	provide dns
+}
+
 command="/usr/bin/coredns"
 
 pidfile="/var/run/${RC_SVCNAME}.pid"
 command_args="-pidfile ${pidfile} -conf ${CONFIG_PATH}"
 command_background=true
 
+output_log=/var/log/coredns/out.log
+error_log=/var/log/coredns/err.log
