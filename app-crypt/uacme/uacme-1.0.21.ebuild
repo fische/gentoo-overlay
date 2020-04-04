@@ -4,8 +4,8 @@
 EAPI=7
 
 DESCRIPTION="ACMEv2 client written in plain C code with minimal dependencies"
-HOMEPAGE="https://github.com/ndilieto/${PN}"
-SRC_URI="https://github.com/ndilieto/${PN}/archive/upstream/${PV}.tar.gz"
+HOMEPAGE="https://github.com/ndilieto/uacme"
+SRC_URI="https://github.com/ndilieto/${PN}/archive/upstream/${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
 S="${WORKDIR}/${PN}-upstream-${PV}"
 
 LICENSE="GPL-3"
