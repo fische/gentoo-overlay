@@ -1,0 +1,14 @@
+#!/sbin/openrc-run
+
+depend() {
+	need net
+}
+
+command="/usr/bin/goldy"
+
+pidfile="/var/run/${RC_SVCNAME}.pid"
+command_args="-l ${LISTEN_ADDR} -b ${BACKEND_ADDR} -c ${CERT_PEM} -k ${PRIVATE_PEM} ${EXTRA_OPTS}"
+command_background=true
+
+output_log=/var/log/goldy/out.log
+error_log=/var/log/goldy/err.log

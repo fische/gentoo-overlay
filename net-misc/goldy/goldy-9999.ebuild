@@ -36,4 +36,7 @@ src_compile() {
 
 src_install() {
 	dobin ${PN}
+
+	newinitd "${FILESDIR}"/goldy-9999.init goldy
+	newconfd "${FILESDIR}"/goldy-9999.conf goldy
 }
